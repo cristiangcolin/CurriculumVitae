@@ -53,6 +53,11 @@
 }
 
 \makeauthorbold{Gonzalez-Colin}
+% Remove "eng" language field
+\AtEveryBibitem{\clearlist{language}}
+
+% Remove "In:" before journal name
+\renewbibmacro{in:}{}
 
 % Set page margins
 \usepackage[left=0.5in, right=0.6in, bottom=0.7in, top=0.5in]{geometry}
